@@ -1,0 +1,102 @@
+:root {
+	--light: #F8F8F8;
+	--dark: #313131;
+	--grey: #888;
+	--primary: #FFCE00;
+	--secondary: #FE4880;
+	--alert: #FF1E2D;
+}
+
+* {
+	font-family: montserrat, sans-serif;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+.home_btn{
+    min-width: fit-content;
+
+}
+
+body {
+	background-color: var(--light);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+h1 {
+	color: var(--grey);
+	font-size: 32px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.total-weight {
+	color: var(--grey);
+	font-size: 28px;
+	font-weight: 900;
+	background-color: #DFDFDF;
+	padding: 5px 25px;
+	border-radius: 8px;
+}
+
+.income-form {
+	display: block;
+	margin: 15px;
+	position: relative;
+}
+
+.income-form:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 0;
+	background-image: linear-gradient(to right, var(--primary), var(--secondary));
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+.income-form:focus-within:after {
+	top: -3px;
+	left: -3px;
+	right: -3px;
+	bottom: -3px;
+}
+.form-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: space-evenly;
+	transition: 0.4s;
+	border-radius: 8px;
+}
+.form-inner input {
+	font-size: 18px;
+	padding: 10px 15px;
+	background-color: #FFF;
+    width: 100%;
+}
+
+.form-inner input[type="date"] {
+	border-radius: 0px;
+	min-width: 200px;
+}
+
+
+.income-list {
+	padding: 15px;
+    width: 100%;
+}
+.income-item-2{
+    text-align: center;
+    margin-top: 20px !important;
+}
